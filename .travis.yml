@@ -5,9 +5,11 @@ node_js:
 jobs:
   include:
     - stage: npm release
+      node_js: "7"
       script: echo "Deploying to npm ..."
       deploy:
         provider: npm
+        skip_cleanup: true
         email: "jonathan.haeberle@gmail.com"
         api_key: $NPM_TOKEN
         on:
