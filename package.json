@@ -1,0 +1,25 @@
+{
+  "name": "release-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npx babel index.js --out-dir dist",
+    "test": "echo \"Skip: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreampulse/release-experiment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreampulse/release-experiment/issues"
+  },
+  "homepage": "https://github.com/dreampulse/release-experiment#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2"
+  }
+}
